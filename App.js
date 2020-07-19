@@ -191,7 +191,7 @@ class App extends Component {
        if(result.status){
         let msg= {
           _id: new Date(),
-          text: `Order Details \n Name 🧑:`+result.data.userName+'\n Mobile 📞: '+result.data.userMobile+'\n Address 🏡'+result.data.userAddress+'\n TotalAmount : ₹'+result.data.totalAmount+' \n Order Status: 🛵\n'+result.data.orderStatus,
+          text: `Order Details \n Name 🧑:`+result.data.userName+'\n Mobile 📞: '+result.data.userMobile+'\n Address 🏡'+result.data.userAddress+'\n TotalAmount : ₹'+result.data.totalAmount+' \n Order Status: 🛵 '+result.data.orderStatus,
           createdAt: new Date(),
           user: BOT_USER
         }
@@ -303,7 +303,7 @@ class App extends Component {
         }));
         let msgd= {
           _id: result.orderId+new Date(),
-          text: '😸ENter your Feedback',
+          text: '😸Enter your Feedback',
           createdAt: new Date(),
           user: BOT_USER
         }
@@ -582,7 +582,7 @@ class App extends Component {
 
       let msgg = {
       _id: new Date().getMilliseconds(),
-      text:'To Confirm Order enter "Confirm" to cancel Order enter "Cancel"\n',
+      text:'To Confirm Order enter "Confirm" \n To cancel Order enter "Cancel"\n',
       createdAt: new Date(),
       user: BOT_USER
     };
