@@ -398,7 +398,7 @@ class App extends Component {
   error(){
     let msg = {
       _id: new Date(),
-      text:'Enter the correct response 😑\n',
+      text:'Enter a correct response 😑\n',
       createdAt: new Date(),
       user: BOT_USER
     };
@@ -462,7 +462,7 @@ class App extends Component {
     }));
     let msg = {
       _id: new Date(),
-      text:'To add more enter "Y / y" \n To confirm order enter "Confirm / confirm"\n To cancel order enter "X / x" ',
+      text:'To add more enter "Y / y" \n To confirm order enter "Confirm "\n To cancel order enter "X / x" ',
       createdAt: new Date(),
       user: BOT_USER
     };
